@@ -10,6 +10,26 @@
     iframe {
       border-radius: 25px;
     }
+    .container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      background-color: black;
+      padding: 10px;
+    }
+    .container div {
+      background-color: white;
+      border: 10px solid black;
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .item1 {
+      grid-row: 1 / span 2;
+    }
+    .item2 {
+      grid-column: 1 / span 2;
+    }
+
     a:link {
       color: lightgreen;
     }
@@ -25,7 +45,7 @@
   </style>
 </head>
 <body>
-  <header style="padding-left: 10px;">
+  <header style="padding-left: 10px; color: lightgreen;">
     <h1 style="font-family: Bad Script;">Changing Aspect Ratio</h1>
   </header>
   <main>
@@ -37,6 +57,26 @@
     <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=275a1e28-1e30-42ff-883e-199350189e3e" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Tall_1_408Kb_865_X_1390" alt="jungle"></iframe>
     <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=e8e0fdce-15eb-4399-bd50-9631f9fdff72" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Square_1.97Mb_813dpi_2121_X_1414" alt="waterfalls"></iframe>
   </main>
+  <article>
+    <h2 style="color: lightgreen;">Grid Skills</h2>
+    <div class="container" style="color: black;">
+      <div class="item1">HVHS</div>
+      <div>Wings</div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" height="50px"> </div>
+      <div>Wings</div>
+      <div>img</div>
+      <div>Wings</div>
+      <div>img</div>
+      <div>img</div>
+      <div>Wings</div>
+      <div class="item2">img</div>
+      <div>Wings</div>
+      <div>img</div>
+      <div>Wings</div>
+      <div>img</div>
+    </div>
+  </article>
+
     <br>
   <nav style="padding-left: 4px;">
     <a style="font-size: 20px; font-family: bilbo swash caps;" href="index.html">Home</a>

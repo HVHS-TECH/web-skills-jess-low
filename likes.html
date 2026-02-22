@@ -12,6 +12,10 @@
     aside {
       float: right;
     }
+    .container{
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
     a:link {
       color: rgb(47, 213, 255);
     }
@@ -31,13 +35,13 @@
     <h1 style="font-family: great vibes; font-size: 37px;">My Interests</h1>
   </header>
   <main style="padding-left: 4px;">
-    <h2 style="font-family: italianno; font-size: 30px;">I like Norse Mythology and fiction/fantasy books.</h2> 
-  <aside>
-    <img src="https://png.pngtree.com/png-vector/20231208/ourmid/pngtree-realistic-angry-red-dragon-full-body-white-background-png-image_11087131.png" width="500" alt="Dragon">
-  </aside>
+    <h2 style="font-family: italianno; font-size: 30px;">I like Norse Mythology and fiction/fantasy books.</h2>
     <h3 style="font-family: gwendolyn; font-size: 25px;">I play Dungeons & Dragons.</h3>
-    <img src="https://www.pngmart.com/files/23/Dungeons-And-Dragons-Logo-PNG-Image.png" width="400" alt="D&D">
-    <br>
+    <div class="container">
+      <div> <img src="https://www.pngmart.com/files/23/Dungeons-And-Dragons-Logo-PNG-Image.png" width="400" alt="D&D"> </div>
+      <div> <img src="https://images.twinkl.co.uk/tw1n/image/private/t_630/u/ux/dragon-3009174-1920_ver_1.png" width="500" alt="Dragon"> </div>
+    </div>
+  <br>
   </main>
   <nav style="padding-left: 4px;">
     <a style="font-size: 20px; font-family: bilbo swash caps;" href="index.html">Home</a>
