@@ -5,16 +5,17 @@
 <link href='https://fonts.googleapis.com/css?family=Bad Script' rel='stylesheet'>
   <meta charset="UTF-8">
   <title>Aspect Ratio</title>
-  <link href="styleg.css" rel="stylesheet">
+  <link href="Styles/styleg.css" rel="stylesheet">
   <style>
-    iframe {
+    img {
       border-radius: 25px;
     }
     .container {
       display: grid;
+      max-width: 600px;
       grid-template-columns: auto auto auto auto;
       background-color: black;
-      padding: 10px;
+      padding: 1px;
     }
     .container div {
       background-color: white;
@@ -27,7 +28,8 @@
       grid-row: 1 / span 2;
     }
     .item2 {
-      grid-column: 1 / span 2;
+      grid-column-start: 3;
+      grid-column-end: 5;
     }
 
     a:link {
@@ -49,31 +51,44 @@
     <h1 style="font-family: Bad Script;">Changing Aspect Ratio</h1>
   </header>
   <main>
-    <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=e4e4efa6-3ef5-40f4-8de3-1af160972488" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Wide_1.40Mb_96dpi_1260_X_681" alt="man looking at river"></iframe>
-    <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=df451b9b-bed1-4136-97f0-ac660867b0de" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Tall_4_430Kb_72dpi_962_X_1443" alt="buildings"></iframe>
-    <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=9d22f263-131e-4252-9ac3-3a102f69df68" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Tall_3_422Kb_72dpi_1000_X_1500" alt="forest"></iframe>
-    <br>
-    <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=d082a6e1-050d-40bb-9666-ffd38434c6f1" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Tall_2_502Kb_72dpi_719_X_1347" alt="tree"></iframe>
-    <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=275a1e28-1e30-42ff-883e-199350189e3e" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Tall_1_408Kb_865_X_1390" alt="jungle"></iframe>
-    <iframe src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/_layouts/15/embed.aspx?UniqueId=e8e0fdce-15eb-4399-bd50-9631f9fdff72" width="300" height="300" frameborder="0" scrolling="no" allowfullscreen title="Square_1.97Mb_813dpi_2121_X_1414" alt="waterfalls"></iframe>
+    <a target="_blank" href="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Wide_1.40Mb_96dpi_1260_X_681.jpg">
+      <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Wide_1.40Mb_96dpi_1260_X_681.jpg" width="300" height="300" alt="man looking at river">
+    </a>
+    <a target="_blank" href="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_4_430Kb_72dpi_962_X_1443.jpg">
+      <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_4_430Kb_72dpi_962_X_1443.jpg" width="300" height="300" alt="buildings">
+    </a>
+    <a target="_blank" href="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_3_422Kb_72dpi_1000_X_1500.jpg">
+      <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_3_422Kb_72dpi_1000_X_1500.jpg" width="300" height="300" alt="forest">
+    </a>
+      <br>
+    <a target="_blank" href="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_2_502Kb_72dpi_719_X_1347.jpg">
+      <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_2_502Kb_72dpi_719_X_1347.jpg" width="300" height="300" alt="tree">
+    </a>
+    <a target="_blank" href="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_1_408Kb_865_X_1390.jpg">
+      <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Tall_1_408Kb_865_X_1390.jpg" width="300" height="300" alt="jungle">
+    </a>
+    <a target="_blank" href="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Square_1.97Mb_813dpi_2121_X_1414.jpg">
+      <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Square_1.97Mb_813dpi_2121_X_1414.jpg" width="300" height="300" alt="waterfalls">
+    </a>
   </main>
   <article>
     <h2 style="color: lightgreen;">Grid Skills</h2>
     <div class="container" style="color: black;">
       <div class="item1">HVHS</div>
       <div>Wings</div>
-      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" height="50px"> </div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
       <div>Wings</div>
-      <div>img</div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
       <div>Wings</div>
-      <div>img</div>
-      <div>img</div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
       <div>Wings</div>
-      <div class="item2">img</div>
+      
+      <div class="item2"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
       <div>Wings</div>
-      <div>img</div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
       <div>Wings</div>
-      <div>img</div>
+      <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
     </div>
   </article>
 
