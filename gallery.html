@@ -10,10 +10,18 @@
     img {
       border-radius: 25px;
     }
+    .container2 {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+    .container2 div {
+      text-align: center;
+      padding: 10px;
+    }
     .container {
       display: grid;
       max-width: 600px;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto auto;
       background-color: black;
       padding: 1px;
     }
@@ -31,7 +39,6 @@
       grid-column-start: 3;
       grid-column-end: 5;
     }
-
     a:link {
       color: lightgreen;
     }
@@ -47,7 +54,9 @@
   </style>
 </head>
 <body>
-  <header style="padding-left: 10px; color: lightgreen;">
+  <div class="container2">
+  <div>
+    <header style="padding-left: 5px; color: lightgreen;">
     <h1 style="font-family: Bad Script;">Changing Aspect Ratio</h1>
   </header>
   <main>
@@ -71,8 +80,13 @@
       <img src="https://hvhsschoolnz-my.sharepoint.com/personal/24135jl_hvhs_school_nz/Documents/Pictures/Square_1.97Mb_813dpi_2121_X_1414.jpg" width="300" height="300" alt="waterfalls">
     </a>
   </main>
+</div>
+
   <article>
-    <h2 style="color: lightgreen;">Grid Skills</h2>
+    <div>
+    <h2 style="color: lightgreen; font-size: 40px;">Grid Skills</h2>
+  </div>
+  <div>
     <div class="container" style="color: black;">
       <div class="item1">HVHS</div>
       <div>Wings</div>
@@ -90,10 +104,12 @@
       <div>Wings</div>
       <div> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwCFJ0KcOQwD0C6-2f6VmanYtU2COAk_tItQ&s" alt="Wings" height="50"> </div>
     </div>
+  </div>
+  </div>
   </article>
 
     <br>
-  <nav style="padding-left: 4px;">
+  <nav style="padding-left: 5px;">
     <a style="font-size: 20px; font-family: bilbo swash caps;" href="index.html">Home</a>
     <br>
     <a style="font-size: 20px; font-family: bilbo swash caps;" href="likes.html">My interests</a>
